@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>event-delegation</title>
+    </head>
+    <body>
+        <ul id="thing-list">
+            <li id="thing-1">Thing 1</li>
+            <li id="thing-2">Thing 2</li>
+            <li id="thing-3">Thing 3</li>
+            <li id="thing-4">Thing 4</li>
+            <li id="thing-5">Thing 5</li>
+        </ul>
+
+        <script>
+            //How can you use Event Delegation to re-write this with only one function?
+            
+            document.getElementById("thing-1").addEventListener("click", function(e) {
+                console.log("Thing-1 was clicked!");
+            });
+            document.getElementById("thing-2").addEventListener("click", function(e) {
+                console.log("Thing-2 was clicked!");
+            });
+            document.getElementById("thing-3").addEventListener("click", function(e) {
+                console.log("Thing-3 was clicked!");
+            });
+            document.getElementById("thing-4").addEventListener("click", function(e) {
+                console.log("Thing-4 was clicked!");
+            });
+            document.getElementById("thing-5").addEventListener("click", function(e) {
+                console.log("Thing-5 was clicked!");
+            });
+        </script>
+    </body>
+</html>
