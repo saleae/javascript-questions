@@ -24,19 +24,13 @@ var obj2 = { c: 3, d: 4 };
 var proto = { a: 1, b: 2 };
 //create a new object who's prototype chain is
 //new_obj -> proto -> Object.prototype -> null
+//console.log( Object.getPrototypeOf(new_obj) );
 
 //7. Using a constuctor, and new: var new_obj = new ...
+
 //8. Using Object.create: var new_obj = Object.create ...
+
 //9. Using 'class' 
-
-var proto = { c: 3, d: 4 }; //given
-class NewObj{
-    constructor(){}
-}
-var new_obj = new NewObj();
-Object.setPrototypeOf( new_obj, proto );
-
-console.log( Object.getPrototypeOf(new_obj) );
 
 
 
