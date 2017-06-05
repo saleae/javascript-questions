@@ -6,18 +6,18 @@ console.log(this);
 console.log("\nQuestion 2:");
 var abc = 123;
 console.log(this.abc);
-//(a) Non-strict, Browser:, what will be on the console here?
-//(b) strict mode, Browser:, what will be on the console here?
-//(c) Non-strict, Node, what will be on the console here?
-//(d) strict mode, Node, what will be on the console here?
+//(a) When running in the Browser, what will be on the console here?
+//(b) When running in Node, what will be on the console here?
 
 console.log("\nQuestion 3:");
 function f1(){
     console.log(this);
 }
 f1(); 
-//(a) When running in the Browser, what will be on the console here?
-//(b) When running in Node, what will be on the console here?
+//(a) Non-strict, Browser:, what will be on the console here?
+//(b) strict mode, Browser:, what will be on the console here?
+//(c) Non-strict, Node, what will be on the console here?
+//(d) strict mode, Node, what will be on the console here?
 
 console.log("\nQuestion 4:");
 var obj = {
